@@ -18,8 +18,7 @@ public class MainClass {
         driver.get("https://www.21vek.by/washing_machines/");
         List<WebElement> lis= driver.findElements(By.xpath("//dt[text()='Производители']/parent::dl/parent::div//dd[@class='filter-attr__value']"));
         //lis.get(3).click();
-        //List<WebElement> checkb=driver.findElements(By.xpath("//ul[@class='catalog-sort']/following-sibling::span"));
-
+        
         for (WebElement chechbox : lis){
             chechbox.click();
         }
